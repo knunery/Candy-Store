@@ -1,0 +1,213 @@
+/*
+color scheme:
+https://kuler.adobe.com/Lemon-Sorbet-7-Bright-color-theme-3533017/edit/?copy=true&base=2&rule=Custom&selected=2&name=Copy%20of%20Lemon%20Sorbet%207%20Bright&mode=rgb&rgbvalues=0.9529411764705882,0.8196078431372549,0.4392156862745098,0.9450980392156862,0.9176470588235294,0.8745098039215686,0.8666666666666667,0.2627450980392157,0.19607843137254902,0.9529411764705882,0.47843137254901963,0.4549019607843137,0.35294117647058826,0.34901960784313724,0.34509803921568627&swatchOrder=0,1,2,3,4
+yellow: F3D170
+white: F1EADF
+red: DD4332
+pink: F37A74
+grey: 5A5958
+light-grey: ADABAA
+*/
+
+/* ==========================================================================
+   2. General - Setting up some base styles
+   ========================================================================== */
+
+html {
+  /*background: #00bdeb url(https://s3-eu-west-1.amazonaws.com/belong/images/html.gif) fixed; */
+
+}
+
+body {
+    background-color: #F1EADF;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #F37A74;
+    margin: 3.2em 0;
+    padding: 0;
+}
+
+blockquote {
+    border-left: #DD4332 0.4em solid;
+}
+
+code, tt, pre {
+    border: 1px solid #E3EDF3;
+    background: #F3D170;
+    color: #5A5958;
+}
+
+/*
+code, tt, pre {
+    border: 1px solid #E3EDF3;
+    background: #5A5958;
+    color: #F3D170;
+}
+*/
+
+/*
+code, tt, pre {
+    border: 1px solid #E3EDF3;
+    background: #DBD9D6;
+    color: #F37A74;
+}*/
+
+
+/* ==========================================================================
+   4. General - The main styles for the the theme
+   ========================================================================== */
+
+/* Big cover image on the home page */
+.site-head {
+    height: 30%;
+
+    /* stripes - http://lea.verou.me/demos/css3-patterns.html */
+    background-color: #F37A74;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+
+    /* stripes will be 50px wide */
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+
+.post {
+  border: 2px dashed #F37A74;
+  padding: 10px;
+  background-color: #F1EADF;
+}
+
+.post-meta {
+    color: #3A4145;
+}
+
+.post-meta a {
+    color: #F37A74;
+}
+
+.post-title a {
+  /*border-bottom: 2px dashed #ccc;*/
+}
+
+.post-title a:hover {
+    color: #DD4332;
+}
+
+.post:after {
+    display: none;
+}
+
+.page-number {
+    /* flat button */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    /*background: #00a1cb;*/
+    background: #F37A74;
+    color: white;
+    text-shadow: none;
+    border: none;
+
+    /* pill effect */
+    padding: 0px 25.6px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/* line 330, ../scss/Buttons/_buttons.scss */
+.page-number:hover {
+  background: #00b5e5;
+}
+/* line 333, ../scss/Buttons/_buttons.scss */
+.page-number:active {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+  background: #1495b7;
+  color: #00647f;
+}
+
+.page-number:hover {
+    background-color: #DD4332;
+    box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
+    transition: box-shadow 0.25s;
+}
+
+.site-footer {
+  background-color: #5A5958;
+  color: #F3D170;
+}
+
+.site-footer a {
+    color: #F37A74;
+}
+
+.site-footer a:hover {
+    color: #DD4332;
+}
+
+/* set rss icon color */
+.subscribe:before {
+    color: white;
+}
+
+/* set bg color for rss icon */
+.subscribe {
+    background-color: #F37A74;
+    border: none;
+}
+
+/* set rss icon color on hover */
+.subscribe:hover:before {
+    color: #fff;
+}
+
+/* set bg color for rss icon on hover*/
+.subscribe:hover {
+    background-color: #DD4332;
+}
+
+/* ==========================================================================
+   5. Single Post - When you click on an individual post
+   ========================================================================== */
+
+/* Tweak the .post wrapper style */
+.post-template .post {
+    border: none;
+}
+
+.post-footer {
+    border-top: #F37A74 1px solid;
+}
+
+/* ==========================================================================
+   9. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+
+    .site-head {
+        min-height: 100px;
+       padding: 0;
+    }
+}
